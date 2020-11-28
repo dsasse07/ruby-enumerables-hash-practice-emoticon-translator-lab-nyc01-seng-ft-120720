@@ -5,6 +5,10 @@ require 'pry'
 def load_library(file)
   emoticon_library = {}
   library = YAML.load_file(file)
+<<<<<<< HEAD
+=======
+  
+>>>>>>> f247aa7fd74df48c5b434949b203d1210ecaaedd
   library.each_key do |key|
    emoticon_library[key] = {english: library[key][0], japanese: library[key][1]}
   end
